@@ -1,0 +1,40 @@
+{
+  "name": "mod-react",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Jon Roby",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "eslint": "./node_modules/.bin/eslint \"./src/**/*.js\"",
+    "prettier": "prettier --write --trailing-comma es5 \"src/**/*.js\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2",
+    "react-redux": "^5.1.1"
+  },
+  "devDependencies": {
+    "@mod-cli/mod-react-plugin": "^0.2.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "camelcase": "^5.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-jest": "^22.1.0",
+    "eslint-plugin-react": "^7.11.1",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "^1.15.3",
+    "redux-logger": "^3.0.6"
+  }
+}

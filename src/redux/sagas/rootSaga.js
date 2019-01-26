@@ -1,0 +1,7 @@
+import { all, call } from "redux-saga/effects";
+
+import properties from "./properties";
+
+export default function* rootSaga() {
+  yield all([call(properties)]);
+}
