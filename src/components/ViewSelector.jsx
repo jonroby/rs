@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ImageGallery from "react-image-gallery";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import fontawesome from "@fortawesome/fontawesome";
 import "@fortawesome/fontawesome-free-solid";

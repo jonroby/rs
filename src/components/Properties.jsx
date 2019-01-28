@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
 import CardView from "./CardView";
 import ListView from "./ListView";
 import ViewSelector from "./ViewSelector";
@@ -21,9 +20,9 @@ class Properties extends Component {
   }
 
   componentDidMount() {
-    // A condition could be added here that checked against a page number
-    // loaded in the store vs the url (to avoid reloading already existing
-    // data, which is what happens currently)
+    // A condition could be added here that checks a page number
+    // loaded in the store vs the url (to avoid reloading already
+    // existing data, which is what happens currently)
     this.props.fetchProperties();
   }
 

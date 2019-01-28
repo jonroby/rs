@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
 import Slider from "./Slider";
 import Address from "./Address";
 import { fetchDetails } from "../redux/actions/creators";

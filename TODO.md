@@ -1,5 +1,0 @@
-- [X] Requests folder 
-- [X] React Router 4
-- [ ] Better error handling
-- [ ] Eslint errors
-- [X] Prettier hook

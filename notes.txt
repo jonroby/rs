@@ -1,0 +1,37 @@
+To start:
+
+nvm use 8 && npm i && npm start
+
+Then navigate to http://localhost:1234/properties
+
+Notes
+
+I used my own personal starter repo (https://github.com/jonroby/mod-react).
+Components can be found in src/components. I decided to transform much of
+the data before it reaches the view layer. The transformations can be found
+in src/redux/sagas/requests.
+
+In those transforms, you'll see several x && x.y && x.y.z checks. I prefer
+optional chaining which can be used Babel 7, but for reasons that I won't get
+into, I chose to use Babel 6 for my starter project and optional chaining isn't
+available for Babel 6.
+
+I decided to filter results if they contained neither the list price, nor the
+rent. The motivation is that if neither the price nor rent is shown, the user
+(probably) doesn't want to see the property. In a real life setting, I would
+discuss with the Product team.
+
+In the detail screen, when there are no photos available, I chose to use the
+mainImageUrl for the carousel, so there is something the user can look at.
+Due to time constraints, I didn't style the carousel anymore than what was
+provided by the library I imported.
+
+The Card view is responsive and the aspect ratio of images is preserved. I did
+NOT handle images that had a different aspect ratio from the rest (id: 1625011,
+listPrice: $114,000). It's my opinion that this is best handled before it ever
+reaches the view layer since there are far better tools for manipulating photos
+than CSS.
+
+
+
+
