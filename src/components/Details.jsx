@@ -9,6 +9,9 @@ import "./details-screen.css";
 class Details extends Component {
   componentDidMount() {
     const id = this.props.location.pathname.split("/")[2];
+
+    // This check is to avoid reloading data that already exists
+    // in the store
     if (this.props.id !== id) {
       this.props.fetchDetails(Number(id));
     }

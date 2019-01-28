@@ -25,11 +25,11 @@ export const transform = data => {
           address1: d.address.address1,
           city: d.address.city,
           state: d.address.state,
-          zip: d.address.zip
+          zip: d.address.zip,
         },
         yearBuilt: d.physical && d.physical.yearBuilt,
         listPrice: d.financial && d.financial.listPrice,
-        monthlyRent: d.financial && d.financial.monthlyRent
+        monthlyRent: d.financial && d.financial.monthlyRent,
       };
     })
     .map(d => {
@@ -40,7 +40,7 @@ export const transform = data => {
           d.listPrice &&
           numeral((d.monthlyRent * 12) / d.listPrice).format("0.00%"),
         listPrice: d.listPrice && numeral(d.listPrice).format("$0,0.00"),
-        monthlyRent: d.monthlyRent && numeral(d.monthlyRent).format("$0,0.00")
+        monthlyRent: d.monthlyRent && numeral(d.monthlyRent).format("$0,0.00"),
       };
     })
     .filter(filter);

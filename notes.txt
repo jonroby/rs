@@ -11,6 +11,12 @@ Components can be found in src/components. I decided to transform much of
 the data before it reaches the view layer. The transformations can be found
 in src/redux/sagas/requests.
 
+For the detail view, I decided to act as if there was a separate API endpoint
+to GET property details by id (to handle the case if someone navigates to
+properties/details/:id directly). All I did was hit the /properties.json
+endpoint and filtered the array by id, transforming the data into a suitable
+form for the view.
+
 In those transforms, you'll see several x && x.y && x.y.z checks. I prefer
 optional chaining which can be used Babel 7, but for reasons that I won't get
 into, I chose to use Babel 6 for my starter project and optional chaining isn't
@@ -22,16 +28,16 @@ rent. The motivation is that if neither the price nor rent is shown, the user
 discuss with the Product team.
 
 In the detail screen, when there are no photos available, I chose to use the
-mainImageUrl for the carousel, so there is something the user can look at.
-Due to time constraints, I didn't style the carousel anymore than what was
-provided by the library I imported.
+mainImageUrl for the carousel, so the user has *something* to look at. Due to
+time constraints, I didn't style the carousel anymore than what was provided
+by the library I imported.
 
 The Card view is responsive and the aspect ratio of images is preserved. I did
-NOT handle images that had a different aspect ratio from the rest (id: 1625011,
-listPrice: $114,000). It's my opinion that this is best handled before it ever
-reaches the view layer since there are far better tools for manipulating photos
-than CSS.
+NOT handle images that have a different aspect ratio from the rest (id: 1625011,
+listPrice: $114,000). It's my strong opinion that this is best handled before
+it ever reaches the view layer since there are far better tools for manipulating
+and enhancing photos than CSS.
 
-
-
-
+Finally, I didn't separate components by stateful/stateless, screens, or shared.
+I don't have strong opinions on this so I would adapt to whatever existing
+structure is in place.
