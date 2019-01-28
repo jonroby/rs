@@ -1,0 +1,27 @@
+.properties-screen {
+  width: 100%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.properties-screen-showing {
+  color: #515151;
+}
+
+.properties-screen-controls {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.properties-screen > div {
+  max-width: 1500px;
+  width: 98%;
+}
+
+.properties-screen-view {
+  width: 100%;
+}

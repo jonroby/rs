@@ -1,0 +1,28 @@
+.view-selector {
+  display: flex;
+}
+
+.view-selector > button {
+  border: 1px solid #dbdbdb;
+  padding: 8px;
+}
+
+.view-selector > button:nth-child(1) {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-right: 0px;
+}
+
+.view-selector > button:nth-child(2) {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.view-selector .selected {
+  background-color: #6259c3;
+  border: 1px solid #6259c3;
+}
+
+.view-selector .unselected {
+  background-color: white;
+}

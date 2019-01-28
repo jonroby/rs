@@ -1,15 +1,18 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import { fetchPropertiesSuccess, fetchPropertiesFailure } from "../actions/creators";
+import {
+  fetchPropertiesSuccess,
+  fetchPropertiesFailure,
+} from "../actions/creators";
 import { FETCH_PROPERTIES } from "../actions/constants";
-import request from "./requests/properties";
+import request, { transform } from "./requests/properties";
 
-export function* propertiesRequest(action) {
+export function* propertiesRequest() {
   try {
     const response = yield call(...request);
 
     if (response.status >= 200 && response.status < 300) {
       const data = yield response.json();
-      yield put(fetchPropertiesSuccess(data));
+      yield put(fetchPropertiesSuccess(transform(data.properties)));
     } else {
       throw response;
     }

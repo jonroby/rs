@@ -1,11 +1,11 @@
 import {
   FETCH_PROPERTIES,
   FETCH_PROPERTIES_SUCCESS,
-  FETCH_PROPERTIES_FAILURE
+  FETCH_PROPERTIES_FAILURE,
 } from "../actions/constants";
 
 const initialState = {
-  properties: []
+  properties: [],
 };
 
 const properties = (state = initialState, action) => {
@@ -13,7 +13,7 @@ const properties = (state = initialState, action) => {
     case FETCH_PROPERTIES:
       return state;
     case FETCH_PROPERTIES_SUCCESS:
-      return { ...state, properties: action.payload.properties };
+      return { ...state, properties: action.payload };
     case FETCH_PROPERTIES_FAILURE:
       return state;
     default:

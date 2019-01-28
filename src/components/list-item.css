@@ -1,0 +1,35 @@
+tr {
+  border-top: 1px solid #ddd;
+  line-height: 1.5;
+}
+
+tr:hover {
+  background-color: #fafafa;
+}
+
+th {
+  color: #767676;
+}
+
+td {
+  font-size: 16px;
+  color: #767676;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+td > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+td a {
+  background-color: #6259c3;
+  color: white;
+  border: 0px;
+  padding: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+}

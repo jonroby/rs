@@ -1,0 +1,94 @@
+.card {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+
+.card .image {
+  position: relative;
+  padding-top: 66.71%;
+}
+
+.card img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+.list-price {
+  font-size: 26px;
+  font-weight: 200;
+}
+
+.year-built {
+  font-size: 14px;
+  font-weight: 200;
+  /* padding-bottom: 5px; */
+}
+
+.card-details {
+  display: flex;
+}
+
+.card-details > div {
+  width: 50%;
+  line-height: 1.5;
+}
+
+.card-details > div:nth-child(1) {
+  border-right: 1px solid #dbdbdb;
+}
+
+.card-details > div {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+.card-details-title {
+  font-size: 13px;
+  color: #767676;
+}
+
+.card-details-value {
+  font-size: 20px;
+  color: #515151;
+}
+
+.card-details-address {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  text-align: center;
+  border-top: 1px solid #dbdbdb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cards-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(263px, auto));
+  /* justify-content: space-between; */
+}
+
+.cards-container > * {
+  /* height: 186; */
+}

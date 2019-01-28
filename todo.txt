@@ -1,0 +1,13 @@
+Cleanup
+[X] Remove logs
+[X] Add keys
+[X] Change tab name
+[X] No images for 114k
+[X] No refetch for properties (add note that this would be done by page number)
+[X] Icon go to home
+[X] Figure out icons hack
+[X] Different size images
+Delete node modules and make sure everything works/copy and make sure everything works
+Add some notes
+Run prettier on everything
+
